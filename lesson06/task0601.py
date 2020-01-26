@@ -49,8 +49,6 @@ class TrafficLight:
                     time.sleep(1)
                     canvas.delete('red_text')
                 canvas.delete('red_circle')
-                canvas.create_oval(10, 10, 60, 60, outline="gray", fill="gray", width=2)
-                root.update()
             elif color == 'yellow':
                 canvas.create_oval(10, 70, 60, 120, outline=color, fill=color, width=2, tag='yellow_circle')
                 for i in range(2):
@@ -59,8 +57,6 @@ class TrafficLight:
                     time.sleep(1)
                     canvas.delete('yellow_text')
                 canvas.delete('yellow_circle')
-                canvas.create_oval(10, 70, 60, 120, outline="gray", fill="gray", width=2)
-                root.update()
             else:
                 canvas.create_oval(10, 130, 60, 180, outline=color, fill=color, width=2, tag='green_circle')
                 for i in range(5):
@@ -69,8 +65,6 @@ class TrafficLight:
                     time.sleep(1)
                     canvas.delete('green_text')
                 canvas.delete('green_circle')
-                canvas.create_oval(10, 130, 60, 180, outline="gray", fill="gray", width=2)
-                root.update()
 
 
 tl = TrafficLight()
